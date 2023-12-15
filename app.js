@@ -37,4 +37,4 @@ class Programmer extends Employee{
 const programmer1 = new Programmer ('Vasia', 18, 2500, 'js')
 const programmer2 = new Programmer ('Kolia', 25, 1500, 'java, PHP')
 const programmer3 = new Programmer ('Petia', 28, 500, 'html')
-console.log(Programmer1, Programmer2, Programmer3 )
+console.log(programmer1, programmer2, programmer3 )
