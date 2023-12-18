@@ -32,9 +32,15 @@ class Programmer extends Employee{
     getSalary (){
         return this.salary * 3
     }
+    getAnnualSalary(){
+        return this.salary * 3 * 12
+    }
 }
+const programmers = []
 
-const programmer1 = new Programmer ('Vasia', 18, 2500, 'js')
-const programmer2 = new Programmer ('Kolia', 25, 1500, 'java, PHP')
-const programmer3 = new Programmer ('Petia', 28, 500, 'html')
-console.log(programmer1, programmer2, programmer3 )
+programmers.push(new Programmer ('Vasia', 18, 2500, 'js')) 
+programmers.push(new Programmer ('Kolia', 25, 1500, 'java, PHP'))
+programmers.push(new Programmer ('Petia', 28, 500, 'html')) 
+programmers.forEach((programmer) => {
+    console.log(programmer.getName(),programmer.getAge(),programmer.getSalary())
+})
